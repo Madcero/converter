@@ -26,11 +26,11 @@ input[type="text"] {
 
 h1 {
   text-align: center;
-  margin-top: 35px;
+  margin-top: 60px;
   color: #ccc;
-  margin-bottom: 1.6rem;
+  margin-bottom: 70px;
   color: #ffffff;
-  font-size: 2.6rem;
+  font-size: 2.7rem;
   line-height: 3rem;
   background-color: #ff8177;
   background-image: linear-gradient(to top, #ffffff 0%, #2c3539 100%);
@@ -53,9 +53,24 @@ h6 {
   -moz-text-fill-color: transparent;
 }
 
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #2c3539 0%, #a19191 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
 .converter {
-  max-width: 460px;
-  min-width: 300px;
+  max-width: 780px;
+  min-width: 600px;
   margin: 0 auto;
   background: radial-gradient(
         circle farthest-side at 0% 50%,
@@ -114,7 +129,7 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 10px 0;
+  margin: 20px 30px;
   color: #f2f2f2;
 }
 
@@ -153,19 +168,19 @@ h6 {
 
 @keyframes rotateShadow {
   0% {
-    box-shadow: -2px -2px 8px 1px #1B1A55, 2px 2px 8px 1px #535C91;
+    box-shadow: -2px -2px 8px 1px #1b1a55, 2px 2px 8px 1px #535c91;
   }
   25% {
-    box-shadow: -2px 2px 8px 1px #1B1A55, 2px -2px 8px 1px #535C91;
+    box-shadow: -2px 2px 8px 1px #1b1a55, 2px -2px 8px 1px #535c91;
   }
   50% {
-    box-shadow: 2px 2px 8px 1px #1B1A55, -2px -2px 8px 1px #535C91;
+    box-shadow: 2px 2px 8px 1px #1b1a55, -2px -2px 8px 1px #535c91;
   }
   75% {
-    box-shadow: 2px -2px 8px 1px #1B1A55, -2px 2px 8px 1px #535C91;
+    box-shadow: 2px -2px 8px 1px #1b1a55, -2px 2px 8px 1px #535c91;
   }
   100% {
-    box-shadow: -2px -2px 8px 1px #1B1A55, 2px 2px 8px 1px #535C91;
+    box-shadow: -2px -2px 8px 1px #1b1a55, 2px 2px 8px 1px #535c91;
   }
 }
 
@@ -175,7 +190,8 @@ h6 {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   width: 150px;
   height: 60px;
   border: 3px solid #2c3539;
@@ -195,26 +211,41 @@ h6 {
 }
 
 @media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  h6 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
   .converter {
+    max-width: 100%;
     padding: 10px;
   }
 
+  .input-group {
+    margin: 10px 0;
+  }
+
   .input-group label {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .input-box {
     width: calc(100% - 20px);
-    margin-right: 10px;
     margin-bottom: 10px;
   }
 
   .converter button {
     width: calc(100% - 20px);
     margin-left: 10px;
-  }
-
-  .powered-by {
-    margin-top: 20px;
   }
 }
