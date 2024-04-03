@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Number System Conversion</title>
+    <link rel="icon" href="fav.jpg">
+</head>
+<body>
+  <h1>Number System Converter</h1>
+  <div class="converter">
+    <div class="input-group">
+      <label for="binary">Binary</label>
+      <input type="text" id="binary" class="input-box" oninput="validateBinary(this.value); convert('binary')" placeholder="Enter Binary Number">
+    </div>
+    <div class="input-group">
+      <label for="octal">Octal</label>
+      <input type="text" id="octal" class="input-box" oninput="validateOctal(this.value); convert('octal')" placeholder="Enter Number">
+    </div>
+    <div class="input-group">
+      <label for="decimal">Decimal</label>
+      <input type="text" id="decimal" class="input-box" oninput="validateDecimal(this.value); convert('decimal')" placeholder="Enter Number">
+    </div>
+    <div class="input-group">
+      <label for="hexadecimal">Hexadecimal</label>
+      <input type="text" id="hexadecimal" class="input-box" oninput="validateHexadecimal(this.value); convert('hexadecimal')" placeholder="Enter Number">
+    </div>
+   
+    <button onclick="clearFields()"><h6>CLEAR</h6></button>
+    
+  </div>
+</body>
+</html>
+
+      <script src="convert.js"></script>
+</body>
+</html>
